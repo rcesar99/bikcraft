@@ -1,0 +1,82 @@
+/* 1.font-weight: 600;
+   2.font-size: 4rem;
+   3.line-height: 1.125;
+   4.font-family: "Poppins", sans-serif;   
+↑ o código abaixo é a mesma coisa do que o código acima. (a ordem seria: font-weight, size e line height e por último family) */
+
+.font-1-PP {
+  font: 400 0.75rem/1.35 "Poppins", sans-serif;
+}
+
+.font-2-PP {
+  font: 400 0.875rem/1.43 "Roboto", sans-serif;
+}
+
+.font-1-P {
+  font: 400 1rem/1.5 "Poppins", sans-serif;
+}
+
+.font-2-P {
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+}
+
+.font-1-M,
+.font-1-M-b {
+  font: 400 1.125rem/1.35 "Poppins", sans-serif;
+}
+
+.font-1-M-b {
+  font-weight: 600;
+}
+
+.font-2-M {
+  font: 500 1.125rem/1.35 "Roboto", sans-serif;
+}
+
+.font-1-G {
+  font: 400 1.5rem/1.5 "Poppins", sans-serif;
+}
+
+.font-2-G,
+.font-2-G-b {
+  font: 400 1.5rem/1.5 "Roboto", sans-serif;
+}
+
+.font-2-G-b {
+  font-weight: 500;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+}
+
+.font-1-GG {
+  font: 600 2rem/1.25 "Poppins", sans-serif;
+}
+
+.font-2-GG {
+  font: 500 2rem/1.25 "Roboto", sans-serif;
+}
+
+.font-1-GGG {
+  font: 600 4rem/1.125 "Poppins", sans-serif;
+}
+
+@media (max-width: 1200px) {
+  .font-1-GGG {
+    font-size: 3rem;
+  }
+  .font-2-G,
+  .font-2-G-b {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .font-1-GGG {
+    font-size: 2rem;
+  }
+
+  .font-1-GG,
+  .font-2-GG {
+    font-size: 1.5rem;
+  }
+}
