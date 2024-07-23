@@ -8,6 +8,7 @@
 @import "./utilidades/tipografia.css";
 @import "./utilidades/cores.css";
 @import "./utilidades/formulario.css";
+@import "./utilidades/animacao.css";
 
 /* Home do site (página inicial). */
 @import "./home/introducao.css";
@@ -37,3 +38,4 @@
 
 /* Parte de termos do site. */
 @import "./termos/termos.css";
+

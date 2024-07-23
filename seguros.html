@@ -8,18 +8,20 @@
   <meta name="description" content="Seguros.">
   <link rel="icon" type="image/svg+xml" href="./img/favicon.svg?v=1.1">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="preload" href="./css/style.css" as="style">
 
   <!-- fontes abaixo: -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body id="seguros">
   <header class="header-bg">
     <div class="header container">
       <a href="./">
-        <img src="./img/bikcraft.svg" alt="Bikcraft">
+        <img src="./img/bikcraft.svg" width="136" height="32" alt="Bikcraft">
       </a>
 
       <nav aria-label="primaria">
@@ -41,7 +43,7 @@
     </div>
 
     <div class="seguros container">
-      <div class="seguros-item">
+      <div class="seguros-item fadeInLeft" data-anime="200">
         <h3 class="font-1-GG cor-6 ">PRATA</h3>
         <span class="font-1-GG cor-0">R$ 199 <span class="font-1-PP cor-6">mensal</span>
         </span>
@@ -51,10 +53,10 @@
           <li>Suporte 08h às 18h</li>
           <li>Cobertura estadual</li>
         </ul>
-        <a class="botao secundario" href="./orcamento.html">INSCREVA-SE</a>
+        <a class="botao secundario" href="./orcamento.html?tipo=seguro&produto=prata">Inscreva-se</a>
       </div>
 
-      <div class="seguros-item">
+      <div class="seguros-item fadeInRight" data-anime="400">
         <h3 class="font-1-GG cor-p1 ">OURO</h3>
         <span class="font-1-GG cor-0">R$ 299 <span class="font-1-PP cor-6">mensal</span>
         </span>
@@ -66,7 +68,7 @@
           <li>Desconto em parceiros</li>
           <li>Acesso ao Clube Bikcraft</li>
         </ul>
-        <a class="botao" href="./orcamento.html">INSCREVA-SE</a>
+        <a class="botao" href="./orcamento.html?tipo=seguro&produto=ouro">Inscreva-se</a>
       </div>
     </div>
 
@@ -77,37 +79,37 @@
       <h2 class="font-1-GGG cor-0">nossas vantagens <span class="cor-p1">.</span></h2>
       <ul>
         <li>
-          <img src="./img/icones/eletrica.svg" alt="">
+          <img src="./img/icones/eletrica.svg" width="32" height="32" alt="">
           <h3 class="font-1-G cor-0">Reparo Elétrico</h3>
           <p class="font-2-P cor-5">Garantimos o reparo completo do seu motor em caso de falhas. Sabemos que falhas são raras, mas estamos aqui para caso ocorra.</p>
         </li>
 
         <li>
-          <img src="./img/icones/carbono.svg" alt="">
+          <img src="./img/icones/carbono.svg" width="32" height="32" alt="">
           <h3 class="font-1-G cor-0">Reparo Elétrico</h3>
           <p class="font-2-P cor-5">Nossos quadros são feitos para durar para sempre. Mas caso algo ocorra, ficamos felizes em reparar.</p>
         </li>
 
         <li>
-          <img src="./img/icones/sustentavel.svg" alt="">
+          <img src="./img/icones/sustentavel.svg" width="32" height="32" alt="">
           <h3 class="font-1-G cor-0">Sustentável</h3>
           <p class="font-2-P cor-5">Trabalhamos com a filosofia de desperdício zero. Qualquer parte defeituosa é reciclada e reutilizada em outro projeto.</p>
         </li>
 
         <li>
-          <img src="./img/icones/rastreador.svg" alt="">
+          <img src="./img/icones/rastreador.svg" width="32" height="32" alt="">
           <h3 class="font-1-G cor-0">Recuperação</h3>
           <p class="font-2-P cor-5">Utilizamos o GPS da sua Bikcraft em conjunto com especialistas em segurança para efetuarmos a recuperação.</p>
         </li>
 
         <li>
-          <img src="./img/icones/seguro.svg" alt="">
+          <img src="./img/icones/seguro.svg" width="32" height="32" alt="">
           <h3 class="font-1-G cor-0">Segurança</h3>
           <p class="font-2-P cor-5">Com o seguro Bikcraft você pode ficar tranquilo em saber que o seu dinheiro não será perdido em casos de roubo.</p>
         </li>
 
         <li>
-          <img src="./img/icones/velocidade.svg" alt="">
+          <img src="./img/icones/velocidade.svg" width="32" height="32" alt="">
           <h3 class="font-1-G cor-0">Rapidez</h3>
           <p class="font-2-P cor-5">A sua Bikcraft ficará pronta para uso no mesmo dia, caso você traga ela para ser reparada em uma das filiais.</p>
         </li>
@@ -119,45 +121,45 @@
     <h2 class="font-1-GGG ">perguntas frequentes <span class="cor-p1">.</span></h2>
     <dl>
       <div>
-        <dt class="font-1-M-B">Qual forma de pagamento vocês aceitam?</dt>
-        <dd class="font-2-P cor-9">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+        <dt><button class="font-1-M-b" aria-controls="pergunta1" aria-expanded="true">Qual forma de pagamento vocês aceitam?</button>
+        <dd id="pergunta1" class="font-2-P cor-9 ativa">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
       </div>
 
       <div>
-        <dt class="font-1-M-B">Como posso entrar em contato?</dt>
-        <dd class="font-2-P cor-9">Você pode entrar em contato conosco através do nosso e-mail de atendimento ao cliente: contato@bikcraft.com, ou pelo telefone: (XX) XXXX-XXXX. Também estamos disponíveis nas redes sociais, como Facebook e Instagram, onde você pode nos enviar mensagens diretas.</dd>
+        <dt><button class="font-1-M-b" aria-controls="pergunta2" aria-expanded="false">Como posso entrar em contato?</button></dt>
+        <dd id="pergunta2" class="font-2-P cor-9">Você pode entrar em contato conosco através do nosso e-mail de atendimento ao cliente: contato@bikcraft.com, ou pelo telefone: (XX) XXXX-XXXX. Também estamos disponíveis nas redes sociais, como Facebook e Instagram, onde você pode nos enviar mensagens diretas.</dd>
       </div>
 
       <div>
-        <dt class="font-1-M-B">Vocês possuem algum desconto?</dt>
-        <dd class="font-2-P cor-9">Sim, frequentemente oferecemos promoções e descontos especiais. Para ficar por dentro das nossas ofertas, assine nossa newsletter ou siga-nos nas redes sociais. Além disso, oferecemos descontos para compras em grandes quantidades e para clientes fiéis</dd>
+        <dt><button class="font-1-M-b" aria-controls="pergunta3" aria-expanded="false">Vocês possuem algum desconto?</button></dt>
+        <dd id="pergunta3" class="font-2-P cor-9">Sim, frequentemente oferecemos promoções e descontos especiais. Para ficar por dentro das nossas ofertas, assine nossa newsletter ou siga-nos nas redes sociais. Além disso, oferecemos descontos para compras em grandes quantidades e para clientes fiéis</dd>
       </div>
 
       <div>
-        <dt class="font-1-M-B">Qual a garantia que possuo?</dt>
-        <dd class="font-2-P cor-9">Nossas bicicletas vêm com uma garantia de 1 ano para o quadro e 6 meses para componentes e acessórios. A garantia cobre defeitos de fabricação, mas não inclui danos causados por uso indevido, desgaste normal, ou acidentes. Para mais detalhes, consulte os nossos termos de garantia.</dd>
+        <dt><button class="font-1-M-b" aria-controls="pergunta4" aria-expanded="false">Qual a garantia que possuo?</button></dt>
+        <dd id="pergunta4" class="font-2-P cor-9">Nossas bicicletas vêm com uma garantia de 1 ano para o quadro e 6 meses para componentes e acessórios. A garantia cobre defeitos de fabricação, mas não inclui danos causados por uso indevido, desgaste normal, ou acidentes. Para mais detalhes, consulte os nossos termos de garantia.</dd>
       </div>
 
       <div>
-        <dt class="font-1-M-B">Posso parcelar no boleto?</dt>
-        <dd class="font-2-P cor-9">Sim, oferecemos a opção de parcelamento no boleto bancário em até 12 vezes sem juros, dependendo do valor da compra. Consulte as condições de pagamento durante o processo de finalização da compra ou entre em contato com o nosso atendimento ao cliente para mais informações.</dd>
+        <dt><button class="font-1-M-b" aria-controls="pergunta5" aria-expanded="false">Posso parcelar no boleto?</button></dt>
+        <dd id="pergunta5" class="font-2-P cor-9">Sim, oferecemos a opção de parcelamento no boleto bancário em até 12 vezes sem juros, dependendo do valor da compra. Consulte as condições de pagamento durante o processo de finalização da compra ou entre em contato com o nosso atendimento ao cliente para mais informações.</dd>
       </div>
 
       <div>
-        <dt class="font-1-M-B">Quantas trocas posso fazer ao ano?</dt>
-        <dd class="font-2-P cor-9">Você tem direito a uma troca gratuita por ano, dentro das condições estabelecidas na nossa política de trocas e devoluções. Trocas adicionais podem ser realizadas mediante análise e podem incorrer em custos adicionais. Consulte nossa política de trocas para mais detalhes.</dd>
+        <dt><button class="font-1-M-b" aria-controls="pergunta6" aria-expanded="false">Quantas trocas posso fazer ao ano?</button></dt>
+        <dd id="pergunta6" class="font-2-P cor-9">Você tem direito a uma troca gratuita por ano, dentro das condições estabelecidas na nossa política de trocas e devoluções. Trocas adicionais podem ser realizadas mediante análise e podem incorrer em custos adicionais. Consulte nossa política de trocas para mais detalhes.</dd>
       </div>
 
       <div>
-        <dt class="font-1-M-B">Qual Bikcraft devo escolher para o meu tamanho?</dt>
-        <dd class="font-2-P cor-9">A escolha do tamanho correto da bicicleta é essencial para seu conforto e desempenho. Nossa tabela de tamanhos sugere o modelo ideal com base na sua altura: Até 1,60m: Nimbus Stark, de 1,61m a 1,75m: Magic Might, acima de 1,76m: Nebula Cosmic.</dd>
+        <dt><button class="font-1-M-b" aria-controls="pergunta7" aria-expanded="false">Qual Bikcraft devo escolher para o meu tamanho?</button></dt>
+        <dd id="pergunta7" class="font-2-P cor-9">A escolha do tamanho correto da bicicleta é essencial para seu conforto e desempenho. Nossa tabela de tamanhos sugere o modelo ideal com base na sua altura: Até 1,60m: Nimbus Stark, de 1,61m a 1,75m: Magic Might, acima de 1,76m: Nebula Cosmic.</dd>
       </div>
     </dl>
   </article>
 
   <footer class="footer-bg">
     <div class="footer container">
-      <img src="./img/bikcraft.svg" alt="logo-tipo bikcraft">
+      <img src="./img/bikcraft.svg" width="136" height="32" alt="logo-tipo bikcraft">
       <div class="footer-contato">
         <h3 class="font-2-G-b cor-0">Contato</h3>
         <ul class="font-2-M cor-5">
@@ -168,13 +170,13 @@
         </ul>
         <div class="footer-redes">
           <a href="instagram.com/">
-            <img src="./img/redes/instagram.svg" alt="instagram">
+            <img src="./img/redes/instagram.svg" width="32" height="32" alt="instagram">
           </a>
           <a href="facebook.com">
-            <img src="./img/redes/facebook.svg" alt="facebook">
+            <img src="./img/redes/facebook.svg" width="32" height="32" alt="facebook">
           </a>
           <a href="youtube.com">
-            <img src="./img/redes/youtube.svg" alt="youtube">
+            <img src="./img/redes/youtube.svg" width="32" height="32" alt="youtube">
           </a>
         </div>
       </div>
@@ -194,6 +196,9 @@
       <p class="footer-copy font-2-M cor-6">Bikcraft © Alguns direitos reservados.</p>
     </div>
   </footer>
+
+  <script src="./js/plugins/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

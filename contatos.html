@@ -8,18 +8,20 @@
   <meta name="description" content="Contato Bikcraft">
   <link rel="icon" type="image/svg+xml" href="./img/favicon.svg?v=1.1">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="preload" href="./css/style.css" as="style">
 
   <!-- fontes abaixo: -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body id="contato">
   <header class="header-bg">
     <div class="header container">
       <a href="./">
-        <img src="./img/bikcraft.svg" alt="Bikcraft">
+        <img src="./img/bikcraft.svg" width="136" height="32" alt="Bikcraft">
       </a>
 
       <nav aria-label="primaria">
@@ -42,7 +44,7 @@
 
     <div class="contato container">
       <section class="contato-dados" aria-label="Endereço">
-        <h2 class="fonte-1-M cor-0">Loja Online</h2>
+        <h2 class="font-1-M cor-0">Loja Online</h2>
         <div class="contato-endereco fonte-2-P cor-4">
           <p>Rua Ali Perto, 39</p>
           <p>Recife, PE</p>
@@ -55,13 +57,13 @@
         </address>
         <div class="contatos-redes">
           <a href="instagram.com/">
-            <img src="./img/redes/instagram-p.svg" alt="instagram">
+            <img src="./img/redes/instagram-p.svg" width="32" height="32" alt="instagram">
           </a>
           <a href="facebook.com">
-            <img src="./img/redes/facebook-p.svg" alt="facebook">
+            <img src="./img/redes/facebook-p.svg" width="32" height="32" alt="facebook">
           </a>
           <a href="youtube.com">
-            <img src="./img/redes/youtube-p.svg" alt="youtube">
+            <img src="./img/redes/youtube-p.svg" width="32" height="32" alt="youtube">
           </a>
         </div>
       </section>
@@ -93,7 +95,7 @@
   <article class="lojas container">
     <h2 class="font-1-GGG">lojas locais <span class="cor-p1">.</span></h2>
     <div class="lojas-item">
-      <img src="./img/lojas/rj.jpg" alt="mapa marcando o endereço">
+      <img src="./img/lojas/rj.jpg" width="1120" height="520" alt="mapa marcando o endereço">
       <div class="lojas-conteudo">
         <h3 class="font-1-GG">Rio de Janeiro</h3>
         <div class="lojas-dados font-2-P cor-8">
@@ -104,12 +106,12 @@
           <a href="mailto:RJ@bikcraft.com">RJ@bikcraft.com</a>
           <a href="tel:+5521999999999">+55 21 99999 9999</a>
         </div>
-        <p class="lojas-tempo font-1-P"><img src="./img/icones/horario.svg" alt="">08h-16h de seg à dom</p>
+        <p class="lojas-tempo font-1-P"><img src="./img/icones/horario.svg" width="20" height="20" alt="">08h-16h de seg à dom</p>
       </div>
     </div>
 
     <div class="lojas-item">
-      <img src="./img/lojas/sp.jpg" alt="mapa marcando o endereço">
+      <img src="./img/lojas/sp.jpg" width="1120" height="520" alt="mapa marcando o endereço">
       <div class="lojas-conteudo">
         <h3 class="font-1-GG">São Paulo</h3>
         <div class="lojas-dados font-2-P cor-8">
@@ -120,14 +122,14 @@
           <a href="mailto:SP@bikcraft.com">SP@bikcraft.com</a>
           <a href="tel:+5511999999999">+55 11 99999 9999</a>
         </div>
-        <p class="lojas-tempo font-1-P"><img src="./img/icones/horario.svg" alt="">08h-16h de seg à dom</p>
+        <p class="lojas-tempo font-1-P"><img src="./img/icones/horario.svg" width="20" height="20" alt="">08h-16h de seg à dom</p>
       </div>
     </div>
   </article>
 
   <footer class="footer-bg">
     <div class="footer container">
-      <img src="./img/bikcraft.svg" alt="logo-tipo bikcraft">
+      <img src="./img/bikcraft.svg" width="136" height="32" alt="logo-tipo bikcraft">
       <div class="footer-contato">
         <h3 class="font-2-G-b cor-0">Contato</h3>
         <ul class="font-2-M cor-5">
@@ -138,13 +140,13 @@
         </ul>
         <div class="footer-redes">
           <a href="instagram.com/">
-            <img src="./img/redes/instagram.svg" alt="instagram">
+            <img src="./img/redes/instagram.svg" width="32" height="32" alt="instagram">
           </a>
           <a href="facebook.com">
-            <img src="./img/redes/facebook.svg" alt="facebook">
+            <img src="./img/redes/facebook.svg" width="32" height="32" alt="facebook">
           </a>
           <a href="youtube.com">
-            <img src="./img/redes/youtube.svg" alt="youtube">
+            <img src="./img/redes/youtube.svg" width="32" height="32" alt="youtube">
           </a>
         </div>
       </div>
@@ -164,6 +166,7 @@
       <p class="footer-copy font-2-M cor-6">Bikcraft © Alguns direitos reservados.</p>
     </div>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
